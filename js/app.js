@@ -32,7 +32,10 @@ function appViewModel() {
             url: 'http://elevenam.github.io/Hive',
             github: 'http://github.com/elevenam/Hive',
             image: 'images/Hive.PNG',
-            description: "Utilized JavaScript inside HTML5 Canvas to recreate Frogger with a gun/ ammo system on top. Exercised mastery of loops, conditionals, objects and arrays",
+            description: "Utilized JavaScript inside HTML5 Canvas to recreate Frogger with a few new extras. "+
+            "Features ammo/ gun system, five different enemies, lives and progressive difficulty! " +
+            " Exercised mastery of loops, conditionals, objects, inheritance and arrays" +
+            "Check out what happens at level 15!",
             date: 'April 2015'
         },
         {
