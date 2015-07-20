@@ -248,6 +248,10 @@ br.small-screen {
   .modal-title {
     font-size: 24px;
   }
+  .project-img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media (max-width: 480px) {
@@ -279,6 +283,10 @@ br.small-screen {
   }
   br.small-screen {
     display: block;
+  }
+  .project-img {
+    width: 100%;
+    height: auto;
   }
   .arrow-down {
     margin-bottom: 0;
