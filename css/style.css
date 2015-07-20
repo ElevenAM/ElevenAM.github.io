@@ -1,0 +1,288 @@
+/* Basic Styles */
+
+body {
+  color: black;
+  font-family: "Montserrat", "sans-serif";
+}
+
+footer {
+  margin-top: 50px;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  padding: 0;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+button {
+  padding: 12px;
+  border-radius: 5px;
+  color: white;
+  background: rgba(0, 177, 115, 0.75);
+  outline: 0;
+  border: 1px solid #ddd;
+  font-weight: 900;
+  font-size: 16px;
+}
+
+button:hover {
+  background: rgb(0, 227, 148);
+}
+
+i {
+  color: rgba(0, 177, 115, 0.75);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+i:hover {
+  color: rgb(0, 227, 148);
+}
+
+strong {
+  font-weight: 700;
+  color: rgba(0, 177, 115, 0.75);
+}
+
+hr.faded {
+  clear: both;
+  float: none;
+  width: 100%;
+  height: 1px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    right bottom,
+    color-stop(0, transparent),
+    color-stop(0.2, black),
+    color-stop(0.8, black),
+    color-stop(1, transparent)
+  );
+}
+
+hr.faded-moz {
+  background-image: -moz-linear-gradient(
+    left center,
+    transparent 0%,
+    black 20%,
+    black 80%,
+    transparent 100%
+  );
+}
+
+/* Classes */
+
+.remove-top {
+  padding-top: 0 !important;
+  margin: 0 !important;
+}
+
+.add-top {
+  margin-top: 20px;
+}
+
+.remove-bottom {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.add-bottom {
+  padding-bottom: 20px;
+}
+
+.text-thin {
+  font-weight: 100;
+}
+
+.title-img {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 35%;
+  height: auto;
+}
+
+.gray {
+  background: #dedede;
+}
+
+.project {
+  box-shadow: 0 0 15px #000;
+}
+
+.project:hover,
+.project:focus {
+  box-shadow: 0 0 25px #000;
+}
+
+.project-title {
+  font-size: 38px;
+}
+
+.project-img {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.project-description {
+  padding: 10px;
+  text-align: left;
+  line-height: 150%;
+  font-size: 15px;
+}
+
+.about-me {
+  line-height: 200%;
+  padding: 50px 25px 50px 25px;
+  font-size: 18px;
+  text-indent: 50px;
+}
+
+.fa-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #393939;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 35px 35px 35px 35px;
+  border-color: #ddd transparent transparent transparent;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+br.small-screen {
+  display: none;
+}
+
+/* Modal */
+
+.modal-header {
+  position: relative;
+  padding: 10px;
+  margin: 0;
+}
+
+.modal-body {
+  padding: 25px 25px 15px 25px;
+  margin: 0;
+}
+
+.modal-content {
+  box-shadow: 5px 5px 50px 15px black;
+  -webkit-overflow-scrolling: touch;
+}
+
+.modal-img {
+  margin-bottom: 10px;
+  border: 1px solid #898989;
+  border-radius: 5px;
+}
+
+.modal-title {
+  font-size: 30px;
+}
+
+/* Resize and center headers on smaller screens */
+
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 980px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    text-align: center;
+  }
+  .title-img {
+    display: block;
+    margin: 0 auto;
+  }
+  .project-title {
+    font-size: 32px;
+  }
+  .about-me {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .modal-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1,
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 26px;
+  }
+  h4,
+  h5,
+  .modal-title {
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  footer {
+    margin-top: 0;
+  }
+  .project-title {
+    font-size: 22px;
+  }
+  .about-me {
+    text-align: center;
+    text-indent: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  br.small-screen {
+    display: block;
+  }
+  .arrow-down {
+    margin-bottom: 0;
+  }
+}
+
+

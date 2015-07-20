@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio | Liam Nguyen</title>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <header class="container add-bottom">
+    <div class="row">
+      <div data-bind="css: colName">
+        <img class="img-responsive img-circle title-img" src="images/profile_pic.jpg" alt="Header Image">
+      </div>
+      <div class="col-md-6 text-right text-uppercase">
+        <h1 class="remove-bottom">Liam Nguyen</h1>
+        <h4 class="remove-top">Web Developer</h4>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- About Me Section -->
+    <section class="gray add-bottom">
+      <div class="container">
+        <h2 class="text-center">About Me</h2>
+        <hr class="faded faded-moz">
+        <div class="about-me">
+          <p>
+            As an upcoming Front end Web Developer, I aspire to create intuitive websites and interfaces. Coming out of Udacity's "Front end Web Developer Nanodegree"​, I am proficient in HTML/ CSS and a number of Javascript libraries including jQuery, Bootstrap, Knockout, Node.js, Grunt, Jasmine and Angular. With few to no bad habits, I currently use Github for version control but am willing to learn and work with any existing framework your company may be using. My goal is to continue developing skills as a Front end Developer and will be picking up Python, iOS Swift and more Javascript libraries in the near future. You can best reach me at liamnguyen.mail@gmail.com
+          </p>
+        </div>
+        <hr class="faded faded-moz">
+        <div class="text-center">
+          <a href="#projects">
+            <button class="add-top">View My Projects</button>
+          </a>
+          <br class="small-screen">
+          <a target="_blank" href="https://drive.google.com/file/d/0B3VAnRs1QmIjYjRUMmtWWFRtZG8/view?usp=sharing">
+            <button class="add-top">View My Resume</button>
+          </a>
+          <br class="small-screen">
+          <a href="#contacts">
+            <button class="add-top">Get in Touch!</button>
+          </a>
+        </div>
+      </div>
+    </section>
+    <div class="arrow-down"></div>
+
+    <!-- Project Gallery -->
+    <section id="projects" class="container" data-bind="foreach: projectsInRows">
+      <div class="row add-bottom text-center">
+        <div data-bind="foreach: {data: content, as: 'project'}">
+          <div data-bind="css: colName">
+            <h3 class="project-title" data-bind="text: name"></h3>
+            <div class="project">
+              <img class="project-img img-responsive center-block" alt="Project Image" data-toggle="modal" data-target="#project1" data-bind="attr: {src: project.image, 'data-target': project.idWithHash}, click: goToProject.bind(project)">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="gray">
+    <div class="container">
+      <div class="row">
+        <h3 class="text-center text-thin">Contact Me</h3>
+        <hr class="faded faded-moz">
+      </div>
+      <div id="contacts" class="add-top text-center">
+        <a href="http://github.com/elevenam" target="_blank"><i class="fa fa-github fa-3x"></i></a>
+        <a href="http://linkedin.com/in/liamnguyen" target="_blank"><i class="fa fa-linkedin-square fa-3x"></i></a>
+        <a href="mailto:liamnguyen.mail@gmail.com"><i class="fa fa-envelope fa-3x"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div data-bind="with: chosenProject">
+    <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-bind="attr: {id: chosenProject().id}">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title text-center text-uppercase" id="myModalLabel" data-bind="text: name"></h3>
+            <i class="fa fa-close fa-2x" data-dismiss="modal"></i>
+          </div>
+          <div class="modal-body text-center">
+            <img class="img-responsive modal-img" alt="Project Image" data-bind="attr: {src: image}">
+            <a target="_blank" data-bind="attr: {href: url}">
+              <button>View Project</button>
+            </a>
+            <a target="_blank" data-bind="attr: {href: github}">
+              <button>View GitHub</button>
+            </a>
+          </div>
+          <div class="modal-footer">
+            <p class="project-description" data-bind="html: description"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/knockout.min.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
