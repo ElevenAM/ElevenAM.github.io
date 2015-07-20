@@ -31,7 +31,7 @@ function appViewModel() {
             name: 'Arcade Game',
             url: 'http://elevenam.github.io/Hive',
             github: 'http://github.com/elevenam/Hive',
-            image: 'images/Hive.png',
+            image: 'images/Hive.PNG',
             description: "Utilized JavaScript inside HTML5 Canvas to recreate Frogger with a gun/ ammo system on top. Exercised mastery of loops, conditionals, objects and arrays",
             date: 'April 2015'
         },
@@ -51,7 +51,7 @@ function appViewModel() {
             name: 'Jasmine Test Suite',
             url: 'http://elevenam.github.io/Feedreader-Testing',
             github: 'http://github.com/elevenam/Feedreader-Testing',
-            image: 'images/Jasmine-Testing.png',
+            image: 'images/Jasmine-Testing.PNG',
             description: "Used the Google Places/ Maps API to populate an interactive Neighborhood Map of Huntington Beach, CA.  " +
             "A list on the side interacts with markers on the map to display restaurant information. " +
             " The Instagram API was used to allow users to browse pictures of each establishment. " +
