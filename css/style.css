@@ -6,7 +6,6 @@ body {
 }
 
 footer {
-  margin-top: 50px;
   padding-top: 10px;
   padding-bottom: 40px;
 }
@@ -131,7 +130,7 @@ hr.faded-moz {
 }
 
 .gray {
-  background: #dedede;
+  background: #c9c3c7;
 }
 
 .project {
@@ -214,6 +213,10 @@ br.small-screen {
 
 .modal-title {
   font-size: 30px;
+}
+
+.row {
+  width: 100%;
 }
 
 /* Resize and center headers on smaller screens */

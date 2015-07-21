@@ -16,8 +16,8 @@
 </head>
 
 <body>
-  <header class="container add-bottom">
-    <div class="row">
+  <header class="add-bottom parallax window" data-parallax="scroll" data-image-src="images/whiteh.jpg">
+    <div class="container">
       <div data-bind="css: colName">
         <img class="img-responsive img-circle title-img" src="images/profile_pic.jpg" alt="Header Image">
       </div>
@@ -55,21 +55,22 @@
         </div>
       </div>
     </section>
-    <div class="arrow-down"></div>
 
     <!-- Project Gallery -->
-    <section id="projects" class="container" data-bind="foreach: projectsInRows">
-      <div class="row add-bottom text-center">
-        <div data-bind="foreach: {data: content, as: 'project'}">
-          <div data-bind="css: colName">
-            <h3 class="project-title" data-bind="text: name"></h3>
-            <div class="project">
-              <img class="project-img img-responsive center-block" alt="Project Image" data-toggle="modal" data-target="#project1" data-bind="attr: {src: project.image, 'data-target': project.idWithHash}, click: goToProject.bind(project)">
+    <div class="row parallax-window" data-parallax="scroll" data-image-src="images/whitevbug.jpg" >
+      <section id="projects" class="container" data-bind="foreach: projectsInRows">
+        <div class="row add-bottom text-center">
+          <div data-bind="foreach: {data: content, as: 'project'}">
+            <div data-bind="css: colName">
+              <h3 class="project-title" data-bind="text: name"></h3>
+              <div class="project">
+                <img class="project-img img-responsive center-block" alt="Project Image" data-toggle="modal" data-target="#project1" data-bind="attr: {src: project.image, 'data-target': project.idWithHash}, click: goToProject.bind(project)">
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </main>
   <footer class="gray">
     <div class="container">
@@ -112,6 +113,7 @@
   </div>
   <script src="js/knockout.min.js"></script>
   <script src="js/jquery.js"></script>
+  <script src="js/parallax.min.js"></script>
   <script src="js/bootstrap.js"></script>
   <script src="js/app.js"></script>
 </body>
