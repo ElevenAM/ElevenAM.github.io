@@ -6,6 +6,7 @@ body {
 }
 
 footer {
+  margin-top: 50px;
   padding-top: 10px;
   padding-bottom: 40px;
 }
@@ -130,7 +131,7 @@ hr.faded-moz {
 }
 
 .gray {
-  background: #c9c3c7;
+  background: #e5e0d9;
 }
 
 .project {
