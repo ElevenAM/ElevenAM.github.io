@@ -32,10 +32,7 @@ function appViewModel() {
             url: 'http://elevenam.github.io/Hive',
             github: 'http://github.com/elevenam/Hive',
             image: 'images/Hive.PNG',
-            description: "Utilized JavaScript inside HTML5 Canvas to recreate Frogger with a few new extras. "+
-            "Features ammo/ gun system, five different enemies, lives and progressive difficulty! " +
-            " Exercised mastery of loops, conditionals, objects, inheritance and arrays" +
-            "Check out what happens at level 15!",
+            description: "This project demonstrates my ability to imagine and create fun and engaging games. In this example I utilized JavaScript inside HTML5 Canvas to recreate Frogger with a few new extras. It features ammo/gun system, five different enemies, lives, and progressive difficulty! Exercised mastery of loops, conditionals, objects, inheritance, and arrays. Check out what happens at level 15!",
             date: 'April 2015'
         },
         {
@@ -43,10 +40,7 @@ function appViewModel() {
             url: 'http://elevenam.github.io/Neighborhood-Map',
             github: 'http://github.com/elevenam/Neighborhood-Map',
             image: 'images/neighborhood.png',
-            description: "Used the Google Places/ Maps API to populate an interactive Neighborhood Map of Huntington Beach, CA. "
-            + "A list on the side interacts with markers on the map to display restaurant information.  " +
-            "The Instagram API was used to allow users to browse pictures of each establishment."  +
-            "Exercised mastery of API’s, Dynamic UI’s, Asynchronous requests and error handling",
+            description: "This project reflects my ability to consume API's from different sources and bring them together in a single application. In this example I used the Google Places/Maps API to populate an interactive Neighborhood Map of Huntington Beach, CA. A list on the side interacts with markers on the map to display restaurant information. The Instagram API was used to allow users to browse pictures of each establishment. Here I exercised mastery of API’s, Dynamic UI’s, asynchronous requests, and error handling.",
             date: 'June 2015'
         },
         {
@@ -54,11 +48,7 @@ function appViewModel() {
             url: 'http://elevenam.github.io/Feedreader-Testing',
             github: 'http://github.com/elevenam/Feedreader-Testing',
             image: 'images/Jasmine-Testing.PNG',
-            description: "Test-driven development is a great way to approach development. " +
-            " Instead of just rushing in to code, we build a series of tests that stress our desired functionality. " +
-            "As we build, tests will go from pass to fail and when all the tests pass, we should have a working version of our desired product." +
-            "In this exercise, I was given an existing Feedreader application. " +
-             "My job was to use the Jasmine library to design tests that would make sure that each feature was accounted for and worked correctly",
+            description: "This project represents my ability to adapt to a specific development procedure and produce viable code. Test-driven development is a great way to approach development. Instead of just rushing into code, it's important to build a series of tests that stress the desired functionality. As tests are built, results vary from pass to fail, and when all the tests pass, a working version of the desired product has been accomplished. In this exercise, I was given an existing Feedreader application. My job was to use the Jasmine library to design tests that would make sure each feature was accounted for and worked correctly.",
             date: 'July 2014'
         },
         {
@@ -66,9 +56,7 @@ function appViewModel() {
             url: 'http://elevenam.github.io/Website-Optimization/views/pizza.html',
             github: 'http://github.com/elevenam/Website-Optimization',
             image: 'images/website_optimization.png',
-            description: "Given a page with a Google Page Score of 35/100, I reorganized the HTML, " +
-            "inlined critical CSS streamlined JavaScript functions, minified files and compressed " +
-            "images to finish with a Google Page Score of 97/100",
+            description: "This project demonstrates my ability to improve the code efficiency of a Web page. Initially I was given a page with a Google Page Score of 35/100. I was able to reorganize the HTML, inlined critical CSS, streamlined the JavaScript functions, minimized files, and compressed images to finish with a Google Page Score of 97/100.",
             date: 'May 2015'
         }
     ];
