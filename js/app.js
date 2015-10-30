@@ -31,7 +31,7 @@ function appViewModel() {
             name: 'Arbonne Promotions Page',
             url: 'http://promotions.arbonne.com',
             github: '',
-            image: 'images/promotionsite.png',
+            image: 'images/promotionsite.PNG',
             description: "This project was one of the solo-endeavors I am most proud of. The site is fully responsive on all screens and includes a drop-down menu which changes content based on the selection. The two more tricky features, however, are the product description buttons that float over the product images and the \"Share\" button. The product description buttons are generated dynamically via JSON object for both large/ small screen options and locked to percentage coordinates on the image. The \"Share\" button can detect which product set you are looking at and when you share the page via social media, the link will automatically open the correct product set and scroll the viewer down to the set.",
             date: 'October 2015'
         },
@@ -39,7 +39,7 @@ function appViewModel() {
             name: 'Arbonne Event Microsite',
             url: 'http://arbonne-events.arbonne.com/nvp/',
             github: '',
-            image: 'images/microsite.png',
+            image: 'images/microsite.PNG',
             description: "Given a photoshop image, I created a pixel perfect representation of the desired event microsite. Notable extra elements include a Navigation bar that tracks where the user is on the page, a \"Print\" button that automatically adjusts content to be print friendly and the usage of modals/ carousels.",
             date: 'August 2015'
         },
